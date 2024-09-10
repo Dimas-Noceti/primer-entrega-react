@@ -1,0 +1,13 @@
+.navbar-completo{
+    display: flex;
+    justify-content: space-around;
+    background-color: aqua;
+    height: 75px;
+    align-items: center;
+    font-size: 20px;
+}
+
+.navbar-completo ul{
+    display: flex;
+    gap: 40px;
+}
