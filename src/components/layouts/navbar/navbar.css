@@ -1,7 +1,7 @@
 .navbar-completo{
     display: flex;
     justify-content: space-around;
-    background-color: aqua;
+    background-color: #7E60BF;
     height: 75px;
     align-items: center;
     font-size: 20px;
@@ -10,4 +10,8 @@
 .navbar-completo ul{
     display: flex;
     gap: 40px;
+}
+
+.navbar-completo ul li{
+    list-style: none;
 }

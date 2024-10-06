@@ -1,0 +1,10 @@
+.divCounter{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.divCounter Button {
+    color: #E4B1F0;
+}
