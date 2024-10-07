@@ -1,7 +1,8 @@
 import { Button, Card, CardActions, CardContent, CardMedia, Typography } from "@mui/material"
 import "./tarjetaProducto.css"
+import { Link } from "react-router-dom"
 
-const TarjetaProducto = ({title, price, img, description}) => {
+const TarjetaProducto = ({title, price, img, description, id}) => {
 
 
   return (
@@ -19,7 +20,9 @@ const TarjetaProducto = ({title, price, img, description}) => {
       </Typography>
     </CardContent>
     <CardActions>
-      <Button size="small">Detalles</Button>
+      <Link to={`/productDetail/${id}`} size="small">
+        <Button>Detalles</Button>
+      </Link>
     </CardActions>
   </Card>
 )}

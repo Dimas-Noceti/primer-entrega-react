@@ -1,19 +1,22 @@
 import CartWidget from "../../common/cartWidget/CartWidget"
 import "./navbar.css"
+import { Link } from "react-router-dom";
 
 const NavbarContainer = () => {
 
-  const categories = ["Todas", "Urbanas", "Deportivas"];
 
   return (
     <div className="navbar-completo">
-        <h2>PA!</h2>
+        <Link to="/">PA!</Link>
         <ul>
-          {categories.map((category) => (
-            <li key={category}>{category}</li>
-          ))}
+          <Link to="/">Todas</Link>
+          <Link to="/category/Energetica">Energeticas</Link>
+          <Link to="/category/Jugos">Jugos</Link>
         </ul>
-        <CartWidget/>
+        <Link to="/carrito">
+          <CartWidget />
+        </Link>
+        
     </div>
   )
 }

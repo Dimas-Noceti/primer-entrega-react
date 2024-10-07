@@ -5,7 +5,7 @@ export const products = [
         price: 5,
         stock: 150,
         description: "La mejor bebida energetica del mercado, te prepara para correr hasta un triatlon :)",
-        category: "Bebida energetica",
+        category: "Energetica",
         img: "https://res.cloudinary.com/dbsyg0e8b/image/upload/v1728235725/blue-cocktail-with-splashes-isolated-white_144627-18415_jtl2tr.jpg"
     },
 
@@ -15,7 +15,7 @@ export const products = [
         price: 5,
         stock: 123,
         description: "La mejor bebida energetica del mercado, te prepara para correr hasta un triatlon :)",
-        category: "Bebida energetica",
+        category: "Energetica",
         img: "https://res.cloudinary.com/dbsyg0e8b/image/upload/v1728235858/apple-juice-glass-surrounded-by-260nw-1722330661_wr5s0k.jpg"
     },
 
@@ -25,7 +25,7 @@ export const products = [
         price: 2,
         stock: 200,
         description: "El mejor y mas natural jugo que encontraras",
-        category: "Bebida saludable",
+        category: "Jugos",
         img: "https://res.cloudinary.com/dbsyg0e8b/image/upload/v1728235920/delicioso-vaso-jugo-naranja_144627-16582_ckrbsd.jpg"
     },
 
@@ -35,7 +35,7 @@ export const products = [
         price: 2,
         stock: 200,
         description: "El mejor y mas natural jugo que encontraras",
-        category: "Bebida saludable",
+        category: "Jugos",
         img: "https://res.cloudinary.com/dbsyg0e8b/image/upload/v1728235928/CUAAL00059_sfdf47.jpg"
     }
 ];

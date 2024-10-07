@@ -1,6 +1,7 @@
 import React from 'react'
 import "./Counter.css"
 import { Button } from '@mui/material';
+import { useNavigate } from 'react-router-dom';
 
 const Counter = ({contador, sumar, restar }) => {
     return (
