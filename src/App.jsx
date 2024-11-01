@@ -3,21 +3,27 @@ import ItemListContainer from "./components/pages/itemListContainer/ItemListCont
 import CartContainer from "./components/pages/cart/CartContainer"
 import NavbarContainer from "./components/layouts/navbar/NavbarContainer"
 import ItemDetailContainer from "./components/pages/itemDetail/itemDetailContainer"
+import { CartContextProvider } from "./context/CartContext"
+import Checkout from "./components/pages/checkout/Checkout"
 
 function App() {
   return (
     <BrowserRouter>
-      <NavbarContainer />
-      <Routes>
-        <Route  path={"/"} element={<ItemListContainer />} />
-        <Route  path={"/category/:categoryName"} element={<ItemListContainer />} />
+      <CartContextProvider>
+        <NavbarContainer />
+        <Routes>
+          <Route  path={"/"} element={<ItemListContainer />} />
+          <Route  path={"/category/:categoryName"} element={<ItemListContainer />} />
 
-        <Route  path={"/carrito"} element={<CartContainer />} />
+          <Route  path={"/carrito"} element={<CartContainer />} />
 
-        <Route  path={"/productDetail/:id"} element={<ItemDetailContainer />} />
+          <Route  path={"/productDetail/:id"} element={<ItemDetailContainer />} />
 
-        <Route  path={"*"} element={<h2>404 not found</h2>} />
-      </Routes>
+          <Route  path={"/checkout"} element={<Checkout />} />
+
+          <Route  path={"*"} element={<h2>404 not found</h2>} />
+        </Routes>
+      </CartContextProvider>
     </BrowserRouter>
   )
 }

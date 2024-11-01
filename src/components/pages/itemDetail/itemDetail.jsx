@@ -3,8 +3,7 @@ import CounterContainer from '../../common/counter/CounterContainer'
 import { Card, CardActionArea, CardContent, CardMedia, Typography } from '@mui/material'
 import "./itemDetail.css"
 
-const ItemDetail = ({item}) => {
-    console.log(item)
+const ItemDetail = ({item, agregarAlCarrito, totalAgregados}) => {
     return (
         <div className='divItemDetail'>
             <Card className='cardItemDetail' sx={{ maxWidth: 345}}>
@@ -27,7 +26,7 @@ const ItemDetail = ({item}) => {
                         </Typography>
                     </CardContent>
                 </CardActionArea>
-                <CounterContainer />
+                <CounterContainer agregarAlCarrito={agregarAlCarrito} stock={item.stock} totalAgregados={totalAgregados}/>
             </Card>
             
         </div>
